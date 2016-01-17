@@ -28,9 +28,10 @@
 
 				<li><a class="active" href="pays.html">Pays</a>
 					<ul>
-						<li><a href="belgique.html">Belgique</a></li>
-						<li><a href="belgique.html">Allemagne</a></li>
-						<li><a href="belgique.html">France</a></li>
+						<c:forEach var="pays" items="${listePays}">
+							<li><a href="belgique.html">${pays.nomPays}</a></li>
+						</c:forEach>
+				
 						
 					</ul>
 				</li>
