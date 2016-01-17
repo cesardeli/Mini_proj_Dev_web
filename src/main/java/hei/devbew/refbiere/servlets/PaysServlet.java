@@ -22,7 +22,7 @@ public class PaysServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		List<Pays> listePays = PaysManager.getInstance().listerPays();
-		//System.out.println("Liste des pays via Servlet:" +listePays);
+		System.out.println("Liste des pays via Servlet:" +listePays);
 		request.setAttribute("listePays", listePays);
 		
 		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/pays.jsp");

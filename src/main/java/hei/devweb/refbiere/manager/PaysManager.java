@@ -29,4 +29,6 @@ public class PaysManager {
 		return paysDao.listerPays();
 	
 	}
+	
+	
 }

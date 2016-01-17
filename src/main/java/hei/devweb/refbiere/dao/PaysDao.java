@@ -9,4 +9,8 @@ public interface PaysDao {
 	public List<Pays> listerPays();
 
 	
+	
+	//public List<Pays> listerPays();
+
+	
 }

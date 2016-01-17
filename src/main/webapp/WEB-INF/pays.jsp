@@ -1,3 +1,7 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,7 +12,7 @@
 		<link href="css/header_nav.css" rel="stylesheet" type="text/css" media="all" />
 
 
-		<title> Référence Bière </title>
+		<title> RÃ©fÃ©rence BiÃ¨re </title>
 	</head>
 	
 	<body>
@@ -54,11 +58,11 @@
 
 			
 			<section>
-				<c:forEach var="listePays" items="${pays}">
+				<c:forEach var="pays" items="${listePays}">
 					<article >
 						<a href="belgique.html">
 							<header>
-								<h2>${pays.nompays}</h2>
+								<h2>${pays.nomPays}</h2>
 							</header>
 							<img src="../img/drapeau-belge.gif" alt="Drapeau">
 						</a>
@@ -67,8 +71,8 @@
 			</section>			
 
 		<footer>
-			<p> Ce superbe site a été réalisé par César DELIGNY. Bravo à lui!</p>
-			<p> L'abus d'alcool est dangereux pour la santé à consommer avec modération.</p>
+			<p> Ce superbe site a Ã©tÃ© rÃ©alisÃ© par CÃ©sar DELIGNY. Bravo Ã  lui!</p>
+			<p> L'abus d'alcool est dangereux pour la santÃ© Ã Â consommer avec modÃ©ration.</p>
 		</footer>
     	
 
